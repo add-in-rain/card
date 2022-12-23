@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+  <script src='js/snowfall.jquery.js'></script>
 </head>
 <body>
   <main>
@@ -51,6 +53,14 @@
       </section>
     </div>
   </main>
-  
 </body>
+<script type='text/javascript'> 
+	
+  $(document).ready(function(){
+        
+  $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
+  
+  });
+  
+   </script>
 </html>
